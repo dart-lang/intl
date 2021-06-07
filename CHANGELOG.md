@@ -1,3 +1,7 @@
+## 0.17.0-nullsafety.3
+
+* Update ruble sign and update corresponding test
+
 ## 0.17.0-nullsafety.2
 
 * Update SDK constraints to >=2.12.0-0 <3.0.0 based on beta release guidelines.
@@ -12,6 +16,8 @@
  * Add `@pragma('vm:prefer-inline')` to `Intl` methods that already have
    `@pragma('dart2js:tryInline')`, for the same reason: to help omit message
    descriptions from compiled output.
+
+## 0.17.0
  * **Breaking Change** [#123][]: Fix parsing of two-digit years to match the
    documented behavior. Previously a two-digit year would be parsed to a value
    in the range [0, 99]. Now it is parsed relative to the current date,
